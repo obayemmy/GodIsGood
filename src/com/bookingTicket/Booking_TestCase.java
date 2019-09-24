@@ -38,16 +38,16 @@ public class Booking_TestCase {
 		arrivalState.click();
 		WebElement selectedState = driver.findElement(By.xpath("//option[contains(text(),'Akwa Ibom-Uyo')]"));
 		selectedState.click();
-		Thread.sleep(2000);s
-		//To click and select datte
+		Thread.sleep(2000);
+		//To click and select date
 		WebElement date = driver.findElement(By.xpath("//input[@id='ContentPlaceHolder2_txtdepart']"));
 		date.click();
 		WebElement day = driver.findElement(By.xpath("//td[@class='day'][contains(text(),'26')]"));
 		day.click();
 		Thread.sleep(3000);
-		//To select number seats
-		WebElement seat = driver.findElement(By.xpath("//select[@id='ContentPlaceHolder2_ddltickets']"));
-		seat.click();
+		//To select number tickets
+		WebElement noOfTicket = driver.findElement(By.xpath("//select[@id='ContentPlaceHolder2_ddltickets']"));
+		noOfTicket.click();
 		WebElement noSeat = driver.findElement(By.xpath("//div[contains(@class,'form-group col-md-1 col-sm-1 col-xs-12 small-inputs')]//option[1]"));
 		noSeat.click();
 		//To click the bookNow button
