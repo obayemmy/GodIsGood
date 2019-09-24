@@ -57,7 +57,7 @@ public class Booking_TestCase {
 	}
 	@Test(priority=2)
 	public void selectSeat() throws InterruptedException {
-		//To verify Bus availability is displayed on this page
+		//To verify Bus Availability is displayed on this page
 		String pageText="Bus Availability";
 		if(driver.getPageSource().contains(pageText)) {
 			System.out.println("the page text is" + pageText);
@@ -75,7 +75,7 @@ public class Booking_TestCase {
 		WebElement continueBtn = driver.findElement(By.xpath("//a[@id='ContentPlaceHolder2_lvbus_lnkbook_0']"));
 		continueBtn.click();
 		Thread.sleep(4000);
-		//To click continue without sign in
+		//To click continue without sign in link
 		WebElement cWt =driver.findElement(By.linkText("Continue without Login"));
 		cWt.click();
 		Thread.sleep(3000);
